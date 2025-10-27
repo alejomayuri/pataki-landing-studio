@@ -1,0 +1,48 @@
+.planGrid :first-child {
+    border-color: #7928ca;
+}
+
+.planGrid :last-child {
+    border-color: #ff0080;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.infinite_galaxy {
+    position: relative;
+    background: linear-gradient(90deg, var(--color-galaxy-start), var(--color-galaxy-end));
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.infinite_galaxy p {
+    position: relative;
+    z-index: 3;
+}
+
+.infinite_galaxy::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, var(--color-galaxy-start), var(--color-galaxy-end));
+    background-size: 200% 200%;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 2;
+    animation: gradientShift 4s ease-in-out infinite;
+}
+
+.infinite_galaxy:hover::after {
+  opacity: 1;
+}

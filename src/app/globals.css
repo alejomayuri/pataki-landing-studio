@@ -29,10 +29,28 @@
   }
 }
 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-inter), sans-serif;
+}
+
+.infinite-galaxy {
+  animation: gradientShift 10s ease-in-out infinite;
+  background: linear-gradient(270deg, var(--color-galaxy-start), var(--color-galaxy-end), var(--color-galaxy-start));
+  background-size: 600% 600%;
 }
 
 .bg-gradient-aurora {
