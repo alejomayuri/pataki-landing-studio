@@ -2,7 +2,7 @@ import React from "react";
 
 const Cta = () => {
     return (
-        <section id="contacto" className="flex flex-col bg-background-secondary py-16">
+        <section id="contacto" className="flex flex-col bg-background-secondary py-12 md:py-16">
             <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-display leading-tight mb-6 text-foreground text-center md:text-left">
                     Convierte tus {" "}

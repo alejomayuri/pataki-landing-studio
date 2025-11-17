@@ -7,7 +7,7 @@ type HeroProps = {
 
 const Hero: React.FC<HeroProps> = ({ ctaText = "Solicita tu landing", onCtaClick }) => {
   return (
-    <section className="flex flex-col items-center justify-center text-center min-h-screen px-6 bg-background text-[#F5F5F7]"
+    <section className="flex flex-col items-center justify-center text-center min-h-screen px-4 bg-background text-[#F5F5F7] md:px-6"
         style={{
             backgroundImage: "url('/bgimg.jpg')",
             backgroundSize: "cover",
@@ -34,7 +34,7 @@ const Hero: React.FC<HeroProps> = ({ ctaText = "Solicita tu landing", onCtaClick
       {ctaText && (
         <button
           onClick={onCtaClick}
-          className="px-6 py-3 rounded-lg bg-gradient-galaxy font-display hover:opacity-90 transition"
+          className="cursor-pointer px-6 py-3 rounded-lg bg-gradient-galaxy font-display hover:opacity-90 transition"
         >
           {ctaText}
         </button>

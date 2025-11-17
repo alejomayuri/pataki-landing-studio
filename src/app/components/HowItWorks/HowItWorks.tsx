@@ -2,9 +2,9 @@ import React from "react";
 
 const HowItWorks = () => {
     return (
-        <section className="flex flex-col bg-background py-16">
+        <section id="como" className="scroll-mt-16 flex flex-col bg-background py-12 md:py-16">
             <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-display leading-tight mb-10 text-center text-foreground">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-display leading-tight mb-4 md:mb-10 text-center text-foreground">
                     ¿Cómo{" "}
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
                         funciona

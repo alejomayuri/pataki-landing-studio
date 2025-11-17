@@ -34,7 +34,7 @@ const DATA = [
 
 const Services = () => {
   return (
-    <section className="flex flex-col bg-background-secondary py-16">
+    <section id="servicios" className="scroll-mt-16 flex flex-col bg-background-secondary py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título y descripción */}
         <div className="text-center md:text-left">
@@ -50,7 +50,7 @@ const Services = () => {
         </div>
 
         {/* Cards */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {DATA.map((item) => (
             <Item key={item.title} data={item} />
           ))}
