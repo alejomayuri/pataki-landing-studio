@@ -22,7 +22,7 @@ export const Testimonials = () => {
             id: 3,
             text: "“Respondieron a nuestro encargo con entusiasmo. Su experiencia fue invaluable para nuestro negocio”",
             name: "— Will Saul, CLOSE",
-            image: "/demos/demo2/avatar-2.png"
+            image: "/demos/demosPublic/demo2/avatar-2.png"
         }
     ]
 
