@@ -1,0 +1,47 @@
+.container {
+    overflow: hidden;
+    width:100%; /* Ancho del contenedor */
+    position: relative;
+    height: 400px;
+    cursor: pointer;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+    transition: all 0.3s ease;
+}
+
+.container:hover img {
+    transform: scale(1.1);
+    filter: brightness(65%);
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Inicialmente, el texto no es visible */
+    transition: all 0.3s ease; /* Agrega una transición de opacidad para un efecto suave */
+}
+
+.container:hover .texto {
+    opacity: 1; /* Hace que el texto sea visible en hover */
+}
+
+.texto h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.texto p {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    width: 280px;
+}

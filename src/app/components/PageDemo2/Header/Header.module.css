@@ -1,0 +1,28 @@
+.navWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.contact, .contactBtn {
+    display: flex;
+    align-items: center;
+}
+
+.dropdownMenu {
+    display: none;
+    height: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navWrapper {
+        display: none;
+    }
+
+    .contactBtn {
+        display: none;
+    }
+
+    .dropdownMenu {
+        display: flex;
+    }
+}

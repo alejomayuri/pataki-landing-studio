@@ -1,0 +1,101 @@
+.section {
+    padding-top: 0px !important;
+}
+
+.bannerWrapper {
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+.bannerImage {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bannerImage img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.bannerContent {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.bannerContent > div {
+    width: 360px;
+    margin-left: 150px;
+}
+
+.bannerContent h1 {
+    font-family: 'Radley', serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+.subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.social p {
+    font-family: 'Radley', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #575757;
+    margin-bottom: 20px;
+}
+
+.social div {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .bannerContent > div {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bannerContent > div {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bannerWrapper {
+        flex-direction: column;
+    }
+
+    .bannerImage {
+        width: 100%;
+    }
+
+    .bannerContent {
+        width: 100%;
+    }
+
+    .bannerContent > div {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .bannerContent h1 {
+        font-size: 40px;
+    }
+}

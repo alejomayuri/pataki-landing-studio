@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
+import ClientLayoutSwitcher from "./ClientLayoutSwitcher";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,11 +32,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${inter.variable} antialiased`}
       >
-        <Header />
-        <main>
-          {children}
-        </main>
-        <Footer />
+        <ClientLayoutSwitcher>{children}</ClientLayoutSwitcher>
       </body>
     </html>
   );

@@ -1,0 +1,30 @@
+.container {
+    background-color: #f9f9f9;
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 6px;
+}
+
+.footerWrapper p {
+    color: #1a202c;
+}
+
+.logoWrapper {
+    width: 70px;
+    color: #333;
+}
+
+.logoWrapper img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .footerWrapper {
+        padding: 40px 0 20px 0;
+    }
+}

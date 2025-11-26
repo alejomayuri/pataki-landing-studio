@@ -7,14 +7,14 @@ const DEMOS = [
         alt: "Demo 1",
         title: "Sabores que conquistan",
         desc: "Una web elegante y cálida para servicios gastronómicos. Diseñada para transmitir confianza y comodidad.",
-        link: "https://demo1.vercel.app",
+        link: "/demo1",
     },
     {
         src: "/demos/demo2.png",
         alt: "Demo 2",
         title: "Diseño que transforma",
         desc: "Una experiencia visual moderna y audaz, ideal para agencias de diseño. Presenta los servicios con presencia profesional.",
-        link: "https://demo1.vercel.app",
+        link: "/demo2",
     },
     {
         src: "/demos/demo3.png",
