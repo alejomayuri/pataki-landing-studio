@@ -1,7 +1,7 @@
 import style from './Cards.module.css';
-import ChefHat from '../../icons/demoIcons/ChefHat';
-import Silverware from '../../icons/demoIcons/Silverware';
-import Martini from '../../icons/demoIcons/Martini';
+import ChefHat from '../../Icons/demoIcons/ChefHat';
+import Silverware from '../../Icons/demoIcons/Silverware';
+import Martini from '../../Icons/demoIcons/Martini';
 
 export const Cards = () => {
     return (

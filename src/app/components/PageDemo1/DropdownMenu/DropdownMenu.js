@@ -2,8 +2,8 @@
 
 import style from './DropdownMenu.module.css'
 import { useState } from 'react'
-import Menu from '../../icons/demoIcons/Menu';
-import Close from '../../icons/demoIcons/Close';       
+import Menu from '../../Icons/demoIcons/Menu';
+import Close from '../../Icons/demoIcons/Close';       
 
 export const DropdownMenu = () => {
     const [showMenu, setShowMenu] = useState(false)

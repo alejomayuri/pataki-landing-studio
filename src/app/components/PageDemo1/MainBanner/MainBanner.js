@@ -1,6 +1,6 @@
 import style from './MainBanner.module.css';
-import WhatsAppIcon from '../../icons/demoIcons/WhatsAppIcon';
-import FacebookIcon from '../../icons/demoIcons/FacebookIcon';
+import WhatsAppIcon from '../../Icons/demoIcons/WhatsAppIcon';
+import FacebookIcon from '../../Icons/demoIcons/FacebookIcon';
 import TikTokIcon from '../../icons/demoIcons/TikTokIcon';
 
 export const MainBanner = () => {
