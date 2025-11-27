@@ -1,6 +1,6 @@
 import style from './FooterBanner.module.css';
-import Phone from '../../Icons/demoIcons/Phone';
-import Mail from '../../Icons/demoIcons/Mail';
+import Phone from '../../icons2/demoIcons/Phone';
+import Mail from '../../icons2/demoIcons/Mail';
 
 export const FooterBanner = () => {
     return (

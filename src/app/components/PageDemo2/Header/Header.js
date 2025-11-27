@@ -2,8 +2,8 @@
 
 import style from './Header.module.css';
 import { Box, Flex, Image, Spacer, IconButton } from '@chakra-ui/react'
-import MenuIcon from '../../Icons/demoIcons/Menu';
-import Close from '../../Icons/demoIcons/Close';
+import MenuIcon from '../../icons2/demoIcons/Menu';
+import Close from '../../icons2/demoIcons/Close';
 import {
     Menu,
     MenuButton,

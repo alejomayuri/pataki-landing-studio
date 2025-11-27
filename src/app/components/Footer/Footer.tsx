@@ -1,7 +1,7 @@
-import PhoneIcon from "../Icons/Phone";
-import MailIcon from "../Icons/Mail";
-import WhatsappIcon from "../Icons/WhatsappIcon";
-import InstagramIcon from "../Icons/InstagramIcon";
+import PhoneIcon from "../icons2/Phone";
+import MailIcon from "../icons2/Mail";
+import WhatsappIcon from "../icons2/WhatsappIcon";
+import InstagramIcon from "../icons2/InstagramIcon";
 
 export default function Footer() {
 

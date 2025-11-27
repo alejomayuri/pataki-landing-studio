@@ -1,6 +1,6 @@
 import style from "./FooterSocial.module.css";
-import Instagram from "../../icons/demoIcons/Instagram";
-import TikTokIcon from "../../icons/demoIcons/TikTokIcon";
+import Instagram from "../../icons2/demoIcons/Instagram";
+import TikTokIcon from "../../icons2/demoIcons/TikTokIcon";
 
 export const FooterSocial = ({ text_insta, text_tiktok }) => {
     return (

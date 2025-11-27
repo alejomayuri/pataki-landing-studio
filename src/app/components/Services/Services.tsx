@@ -1,8 +1,8 @@
 import React from "react";
-import DesigneIcon from "../Icons/Designe";
-import DevelopIcon from "../Icons/Develop";
-import SeoIcon from "../Icons/Seo";
-import OptimizationIcon from "../Icons/Optimization";
+import DesigneIcon from "../icons2/Designe";
+import DevelopIcon from "../icons2/Develop";
+import SeoIcon from "../icons2/Seo";
+import OptimizationIcon from "../icons2/Optimization";
 import Item from "./Item";
 
 const DATA = [
