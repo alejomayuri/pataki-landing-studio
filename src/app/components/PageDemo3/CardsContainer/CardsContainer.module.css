@@ -1,0 +1,7 @@
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
