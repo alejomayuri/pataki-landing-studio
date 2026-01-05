@@ -77,3 +77,13 @@
     font-size: 14px;
     margin-top: 8px;
 }
+
+@media screen and (max-width: 768px) {
+    .formWrapper form {
+        flex-direction: column;
+    }
+
+    .formWrapper form button {
+        width: 150px;
+    }
+}
