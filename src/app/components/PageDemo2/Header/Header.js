@@ -89,7 +89,7 @@ export const Header = () => {
                                     <MenuButton
                                         as={IconButton}
                                         aria-label='Options'
-                                        icon={isOpen ? <Close fill='#fff' stroke='#fff' /> : <MenuIcon stroke='#fff' />}
+                                        icon={isOpen ? <Close fill='#fff' stroke='#fff' viewBox="0 0 24 24" /> : <MenuIcon stroke='#fff' />}
                                         variant='outline'
                                         bg={'transparent'}
                                         _expanded={{ bg: 'transparent' }}

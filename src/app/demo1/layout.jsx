@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
         <div style={{background: "#fff"}}>
             <Header />
             <main style={{
-                paddingTop: "84px",
+                paddingTop: "0px",
                 maxWidth: "1600px",
                 margin: "0 auto",
                 width: "100%",

@@ -1,5 +1,5 @@
 import Header from "../components/PageDemo3/Header/Header"
-// import Footer from "../components/PageDemo1/Footer/footer"
+import Footer from "../components/PageDemo3/Footer/Footer"
 // import { background } from "@chakra-ui/react"
 
 export const Layout = ({ children }) => {
@@ -14,7 +14,7 @@ export const Layout = ({ children }) => {
             }}>
                 {children}
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     </>
   )

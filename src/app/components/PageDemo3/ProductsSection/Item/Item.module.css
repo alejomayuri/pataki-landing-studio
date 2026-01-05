@@ -3,6 +3,20 @@
     border-radius: 4px;
     overflow: hidden;
     text-align: center;
+    position: relative;
+}
+
+.newBadge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    z-index: 1;
 }
 
 .imageContainer {

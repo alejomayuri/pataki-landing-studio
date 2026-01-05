@@ -8,6 +8,7 @@ const DATA = [
         image: "demos/demosPublic/demo3/product1.jpg",
         price: "S/. 100",
         colors: ["#E75F55", "#000000", "#FFFFFF"],
+        isNew: true,
     },
     {
         id: 2,
@@ -22,6 +23,7 @@ const DATA = [
         image: "demos/demosPublic/demo3/product3.jpg",
         price: "S/. 200",
         colors: ["#FFFFFF", "#000"],
+        isNew: true,
     },
     {
         id: 4,
@@ -29,6 +31,7 @@ const DATA = [
         image: "demos/demosPublic/demo3/product4.jpg",
         price: "S/. 250",
         colors: ["#fff", "#24a1a1ff", "#C0C0C0"],
+        isNew: true,
     },
     {
         id: 5,
@@ -50,6 +53,7 @@ const ProductsSection = () => {
                         image={product.image}
                         price={product.price}
                         colors={product.colors}
+                        isNew={product.isNew}
                     />
                 ))}
             </div>
