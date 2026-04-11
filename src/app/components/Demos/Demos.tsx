@@ -19,9 +19,9 @@ const DEMOS = [
     {
         src: "/demos/demo3.png",
         alt: "Demo 3",
-        title: "Tradición, carácter y sabor",
-        desc: "Una web con estética artesanal y energía contemporánea. Perfecta para conectar con la comunidad y destacar su autenticidad.",
-        link: "https://demo1.vercel.app",
+        title: "Estilo, moda y carácter",
+        desc: "Una web con estética minimalista y energía contemporánea. Perfecta para conectar con la comunidad y destacar su autenticidad.",
+        link: "/demo3",
     },
 ];
 
