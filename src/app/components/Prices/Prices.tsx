@@ -2,6 +2,7 @@
 
 import React from "react";
 import style from "./Prices.module.css";
+import Link from "next/link";
 
 const PLANS = [
   {
@@ -95,7 +96,8 @@ const Prices = () => {
                     <li key={feature}>• {feature}</li>
                   ))}
                 </ul>
-                <a
+                <Link
+                  href="/solicita-tu-landing"
                   className={`px-5 py-3 flex justify-center sm:justify-start max-w-full sm:max-w-fit cursor-pointer rounded-md font-medium transition-colors duration-300 ${
                     plan.highlight
                       ? "bg-white text-black hover:bg-gray-200"
@@ -103,7 +105,7 @@ const Prices = () => {
                   }`}
                 >
                   <p>Solicitar ahora</p>
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -119,9 +121,9 @@ const Prices = () => {
           Creamos landing pages con propósito: diseño profesional, rendimiento
           optimizado y resultados reales para tu negocio o marca personal.
         </p>
-        <button className="cursor-pointer bg-gradient-to-r from-[var(--color-galaxy-start)] to-[var(--color-galaxy-end)] text-white px-8 py-3 rounded-full font-semibold shadow-md hover:scale-105 transition-transform duration-200">
+        <Link href="/solicita-tu-landing" className="my-4 block max-w-fit mx-auto cursor-pointer bg-gradient-to-r from-[var(--color-galaxy-start)] to-[var(--color-galaxy-end)] text-white px-8 py-3 rounded-full font-semibold shadow-md hover:scale-105 transition-transform duration-200">
           Hablemos de tu proyecto
-        </button>
+        </Link>
       </section>
     </>
   );

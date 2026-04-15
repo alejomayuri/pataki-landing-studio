@@ -25,12 +25,12 @@ export default function Header() {
 
       {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8 font-display">
-            <Link href="#servicios">Servicios</Link>
-            <Link href="#demos">Demos</Link>
-            <Link href="#como">¿Como trabajamos?</Link>
-            <Link href="#precios">Precios</Link>
+            <Link href="/#servicios">Servicios</Link>
+            <Link href="/#demos">Demos</Link>
+            <Link href="/#como">¿Como trabajamos?</Link>
+            <Link href="/#precios">Precios</Link>
             <Link
-                href="#contacto"
+                href="/solicita-tu-landing"
                 className="px-4 py-2 rounded-md text-white bg-gradient-galaxy"
                 >
                 Solicita tu landing

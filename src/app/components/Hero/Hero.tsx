@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 type HeroProps = {
   ctaText?: string;
@@ -32,12 +33,12 @@ const Hero: React.FC<HeroProps> = ({ ctaText = "Solicita tu landing", onCtaClick
 
       {/* CTA */}
       {ctaText && (
-        <button
-          onClick={onCtaClick}
+        <Link
+          href="/solicita-tu-landing"
           className="cursor-pointer px-6 py-3 rounded-lg bg-gradient-galaxy font-display hover:opacity-90 transition"
         >
           {ctaText}
-        </button>
+        </Link>
       )}
     </section>
   );

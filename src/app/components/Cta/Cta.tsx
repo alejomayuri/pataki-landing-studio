@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Cta = () => {
     return (
@@ -21,11 +22,12 @@ const Cta = () => {
                 </p>
 
                 <div className="flex justify-center md:justify-start">
-                    <a
+                    <Link
+                        href="/solicita-tu-landing"
                         className="font-display cursor-pointer bg-gradient-to-r from-[var(--color-galaxy-start)] to-[var(--color-galaxy-end)] text-white px-8 py-4 sm:py-5 rounded-xl text-lg sm:text-xl md:text-2xl font-medium hover:from-[#FF0080] hover:to-[#7928CA] transition-colors duration-300 inline-block mt-8"
                     >
                         Solicita tu landing
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
