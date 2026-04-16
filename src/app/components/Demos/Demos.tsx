@@ -6,15 +6,15 @@ const DEMOS = [
         src: "/demos/demo1.png",
         alt: "Demo 1",
         title: "Sabores que conquistan",
-        desc: "Una web elegante y cálida para servicios gastronómicos. Diseñada para transmitir confianza y comodidad.",
+        desc: "Una web elegante y cálida para servicios gastronómicos. Diseñada para transmitir confianza y comodidad a tus clientes.",
         link: "/demo1",
     },
     {
         src: "/demos/demo2.png",
         alt: "Demo 2",
         title: "Diseño que transforma",
-        desc: "Una experiencia visual moderna y audaz, ideal para agencias de diseño. Presenta los servicios con presencia profesional.",
-        link: "/demo2",
+        desc: "Una experiencia visual moderna y directa, diseñada para informar y atraer clientes potenciales, destacando el profesionalismo de tu empresa.",
+        link: "https://www.pandoralimo.com/",
     },
     {
         src: "/demos/demo3.png",
