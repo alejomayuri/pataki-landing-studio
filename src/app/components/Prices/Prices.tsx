@@ -7,44 +7,43 @@ import Link from "next/link";
 const PLANS = [
   {
     title: "Esencial",
-    price: "$ 100",
+    price: "S/ 450",
     description:
       "Perfecta para marcas o profesionales que necesitan una presencia online rápida y efectiva.",
     features: [
       "Landing page responsiva (Home + 1 vista personalizada)",
       "Diseño profesional y adaptado a tu marca",
       "Optimizada para móviles y SEO básico",
-      "Formulario de contacto básico y redes sociales",
-      "No aplica suscripción mensual",
+      "Formulario de contacto básico",
+      "No incluye Plan de Crecimiento y Soporte",
     ],
     highlight: false,
   },
   {
     title: "Profesional",
-    price: "$ 200",
+    price: "S/ 890",
     description:
       "Ideal para negocios que buscan destacar con una web más completa y personalizable.",
     features: [
-      "Landing page responsiva (3-5 vistas personalizadas)",
+      "Landing page responsiva (2-3 vistas personalizadas)",
       "Diseño exclusivo y adaptado a tu marca",
-      "SEO avanzado y optimización de velocidad",
+      "Optimizada para móviles, SEO avanzado y optimización de velocidad",
       "Formulario de contacto profesional",
-      "Soporte técnico",
-      "Aplica suscripción mensual",
+      "Incluye Plan de Crecimiento y Soporte por un mes",
     ],
     highlight: true,
   },
   {
     title: "Premium",
-    price: "$ 280",
+    price: "S/ 1,400",
     description:
       "Pensada para proyectos en crecimiento que necesitan actualizaciones y soporte continuo.",
     features: [
-      "Landing page responsiva y escalable (5+ vistas personalizadas)",
+      "Landing page responsiva y escalable (3+ vistas personalizadas)",
       "Diseño exclusivo y adaptado a tu marca",
-      "SEO avanzado, formulario profesional y optimización de velocidad",
-      "Actualización de contenido continua y soporte técnico",
-      "Aplica suscripción mensual",
+      "Optimizada para móviles, SEO avanzado y optimización de velocidad",
+      "Formulario de contacto profesional",
+      "Incluye Plan de Crecimiento y Soporte por 3 meses",
     ],
     highlight: false,
   },

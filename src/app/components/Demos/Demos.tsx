@@ -68,7 +68,7 @@ const Demos = () => {
                                     target="_blank"
                                     className="inline-block px-5 py-2 text-sm font-medium rounded-md bg-gradient-to-r from-[var(--color-galaxy-start)] to-[var(--color-galaxy-end)] text-white"
                                 >
-                                    Ver demo
+                                    Ver proyecto
                                 </a>
                             </div>
                         </div>

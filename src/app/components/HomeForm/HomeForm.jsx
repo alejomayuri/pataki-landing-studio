@@ -4,17 +4,13 @@ import { useState } from "react";
 import Close from "../icons2/demoIcons/Close";
 
 const HomeForm = () => {
-    const [result, setResult] = useState({
-        success: "",
-        error: ""
-    });
+    const [result, setResult] = useState("");
     const [loading, setLoading] = useState(false);
     const [showMessage, setShowMessage] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-        setResult({ success: "Enviando...", error: "" });
         const formData = new FormData(e.target);
         formData.append("access_key", "61b41e76-25a2-4e07-9269-995433395365");
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -25,10 +21,10 @@ const HomeForm = () => {
         setLoading(false);
         setShowMessage(true);
         if (data.success) {
-            setResult({ success: "Mensaje enviado con éxito, nos pondremos en contacto contigo pronto.", error: "" });
+            setResult("Mensaje enviado con éxito, nos pondremos en contacto contigo pronto.");
             e.target.reset();
         } else {
-            setResult({ success: "", error: "Error" });
+            setResult("Error al enviar el mensaje. Por favor, inténtalo de nuevo.");
         }
     };
 
@@ -86,7 +82,7 @@ const HomeForm = () => {
                     <div className="relative max-w-xl text-left text-lg text-white font-sans text-center mt-8 bg-gradient-to-r from-[#7928CA] to-[#FF0080] p-4 rounded-lg">
                         <Close fill='#fff' stroke='#fff' width={35} height={35} className="absolute top-1 right-1 cursor-pointer p-2" onClick={() => setShowMessage(false)} />
                         <p className="text-left text-lg text-white font-sans text-center mt-2">
-                            Mensaje enviado con éxito, nos pondremos en contacto contigo pronto.
+                            {result}
                         </p>
                     </div>
                 )}

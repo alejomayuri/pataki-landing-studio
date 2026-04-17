@@ -26,7 +26,7 @@ export default function Header() {
       {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8 font-display">
             <Link href="/#servicios">Servicios</Link>
-            <Link href="/#demos">Demos</Link>
+            <Link href="/#demos">Proyectos</Link>
             <Link href="/#como">¿Como trabajamos?</Link>
             <Link href="/#precios">Precios</Link>
             <Link
