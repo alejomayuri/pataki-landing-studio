@@ -22,29 +22,34 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-end gap-8">
             <ul className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-6 text-sm">
                 <li>
-                <a href="#servicios" className="hover:text-white transition-colors">
-                    Servicios
-                </a>
+                    <a href="#servicios" className="hover:text-white transition-colors">
+                        Servicios
+                    </a>
                 </li>
                 <li>
-                <a href="#demos" className="hover:text-white transition-colors">
-                    Demos
-                </a>
+                    <a href="#demos" className="hover:text-white transition-colors">
+                        Demos
+                    </a>
                 </li>
                 <li>
-                <a href="#planes" className="hover:text-white transition-colors">
-                    Planes
-                </a>
+                    <a href="#planes" className="hover:text-white transition-colors">
+                        Planes
+                    </a>
                 </li>
                 <li>
-                <a href="#precios" className="hover:text-white transition-colors">
-                    Precios
-                </a>
+                    <a href="#precios" className="hover:text-white transition-colors">
+                        Precios
+                    </a>
                 </li>
                 <li>
-                <a href="/solicita-tu-landing" className="hover:text-white transition-colors">
-                    Solicita tu landing
-                </a>
+                    <a href="/terminos-y-condiciones" className="hover:text-white transition-colors">
+                        T&C
+                    </a>
+                </li>
+                <li>
+                    <a href="/solicita-tu-landing" className="hover:text-white transition-colors">
+                        Solicita tu landing
+                    </a>
                 </li>
             </ul>
 
