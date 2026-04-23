@@ -40,7 +40,13 @@ export default function TermsAndConditions() {
           4. Plan de Crecimiento y Soporte
         </h2>
         <p className="text-[var(--color-foreground-secondary)] font-sans text-base sm:text-lg max-w-3xl text-center :text-left mx-auto md:mx-0">
-          Este plan es una suscripción mensual diseñada para mantener la web actualizada, segura y funcional.
+          Este plan es una suscripción mensual diseñada para mantener tu web actualizada, segura y funcional.
+        </p>
+        <h3 className="text-2xl font-display leading-tight mb-4 mt-8 text-foreground">
+          Precio
+        </h3>
+        <p className="text-[var(--color-foreground-secondary)] font-sans text-base sm:text-lg max-w-3xl text-center text-left mx-auto md:mx-0">
+          El costo de esta suscripción es de <b>S/ 99 al mes</b>, con facturación mensual. No existen contratos de permanencia ni penalizaciones por cancelación.
         </p>
         <h3 className="text-2xl font-display leading-tight mb-4 mt-8 text-foreground">
           ¿En qué consiste?

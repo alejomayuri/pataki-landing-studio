@@ -2,6 +2,7 @@ import PhoneIcon from "../icons2/Phone";
 import MailIcon from "../icons2/Mail";
 import WhatsappIcon from "../icons2/WhatsappIcon";
 import InstagramIcon from "../icons2/InstagramIcon";
+import Link from "next/link";
 
 export default function Footer() {
 
@@ -42,14 +43,14 @@ export default function Footer() {
                     </a>
                 </li>
                 <li>
-                    <a href="/terminos-y-condiciones" className="hover:text-white transition-colors">
+                    <Link href="/terminos-y-condiciones" className="hover:text-white transition-colors">
                         T&C
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="/solicita-tu-landing" className="hover:text-white transition-colors">
+                    <Link href="/solicita-tu-landing" className="hover:text-white transition-colors">
                         Solicita tu landing
-                    </a>
+                    </Link>
                 </li>
             </ul>
 

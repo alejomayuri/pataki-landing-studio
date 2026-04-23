@@ -108,7 +108,7 @@ export default function RequestLanding() {
               >
                 <option className="bg-[#0a0a0a] text-white" value="">Selecciona una opción</option>
                 <option className="bg-[#0a0a0a] text-white">Proyecto personal</option>
-                <option className="bg-[#0a0a0a] text-white">Negocio / emprendimiento</option>
+                <option className="bg-[#0a0a0a] text-white">Negocio / Emprendimiento</option>
                 <option className="bg-[#0a0a0a] text-white">Marca personal</option>
                 <option className="bg-[#0a0a0a] text-white">Otro</option>
               </select>
@@ -150,15 +150,15 @@ export default function RequestLanding() {
             </legend>
 
             <div className="space-y-2">
-              <label className="text-sm">Presupuesto *</label>
+              <label className="text-sm">Plan de interes *</label>
               <select className="w-full px-4 py-3 rounded-md border-b-2 border-[var(--color-galaxy-start)] focus:outline-none"
                 name="budget"
                 required
               >
-                <option className="bg-[#0a0a0a] text-white" value="">Rango aproximado</option>
-                <option className="bg-[#0a0a0a] text-white">Menos de $300</option>
-                <option className="bg-[#0a0a0a] text-white">$300 – $600</option>
-                <option className="bg-[#0a0a0a] text-white">Más de $600</option>
+                <option className="bg-[#0a0a0a] text-white" value="">Selecciona una opción</option>
+                <option className="bg-[#0a0a0a] text-white">Esencial (S/ 300)</option>
+                <option className="bg-[#0a0a0a] text-white">Profesional (S/ 690)</option>
+                <option className="bg-[#0a0a0a] text-white">Premium (S/ 999)</option>
               </select>
             </div>
 
@@ -168,7 +168,7 @@ export default function RequestLanding() {
                 name="timeline"
                 required
               >
-                <option className="bg-[#0a0a0a] text-white" value="">Selecciona</option>
+                <option className="bg-[#0a0a0a] text-white" value="">Selecciona una opción</option>
                 <option className="bg-[#0a0a0a] text-white">Lo antes posible</option>
                 <option className="bg-[#0a0a0a] text-white">1–2 semanas</option>
                 <option className="bg-[#0a0a0a] text-white">Flexible</option>

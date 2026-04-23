@@ -7,7 +7,7 @@ import Link from "next/link";
 const PLANS = [
   {
     title: "Esencial",
-    price: "S/ 450",
+    price: "S/ 390",
     description:
       "Perfecta para marcas o profesionales que necesitan una presencia online rápida y efectiva.",
     features: [
@@ -21,7 +21,7 @@ const PLANS = [
   },
   {
     title: "Profesional",
-    price: "S/ 890",
+    price: "S/ 690",
     description:
       "Ideal para negocios que buscan destacar con una web más completa y personalizable.",
     features: [
@@ -35,7 +35,7 @@ const PLANS = [
   },
   {
     title: "Premium",
-    price: "S/ 1,400",
+    price: "S/ 999",
     description:
       "Pensada para proyectos en crecimiento que necesitan actualizaciones y soporte continuo.",
     features: [
