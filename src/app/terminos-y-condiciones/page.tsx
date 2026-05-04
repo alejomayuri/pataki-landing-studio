@@ -89,7 +89,7 @@ export default function TermsAndConditions() {
           8. Contacto
         </h2>
         <p className="text-[var(--color-foreground-secondary)] font-sans text-base sm:text-lg max-w-3xl text-center text-left mx-auto md:mx-0">
-          Para cualquier consulta o aclaración sobre estos términos y condiciones, por favor contáctenos a través de nuestro formulario de contacto o envíenos un correo electrónico a <a href="mailto:info@pataki.com" className="text-[#ff0080] hover:underline">info@pataki.com</a>.
+          Para cualquier consulta o aclaración sobre estos términos y condiciones, por favor contáctenos a través de nuestro formulario de contacto o envíenos un correo electrónico a <a href="mailto:info@pataki.io" className="text-[#ff0080] hover:underline">info@pataki.io</a>.
         </p>
         <h2 className="text-2xl md:text-4xl font-display leading-tight mb-4 mt-16 text-foreground">
           Política de Privacidad
