@@ -16,7 +16,7 @@ export default function Footer() {
               </span>
             </h3>
             <p className="text-sm mt-2 text-gray-500">
-              Creamos herramientas para poner el mundo en tus manos.
+              Software para poner el mundo en tus manos.
             </p>
           </div>
 
