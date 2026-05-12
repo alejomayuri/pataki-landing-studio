@@ -49,12 +49,12 @@ export default function Header() {
       {/* Mobile menu */}
       {menuOpen && (
         <nav className="absolute top-16 left-0 w-full bg-background text-white flex flex-col items-center gap-4 py-6 md:hidden font-display border-b-2 border-[var(--color-galaxy-start)]">
-            <Link href="#servicios" onClick={() => setMenuOpen(false)}>Servicios</Link>
-            <Link href="#demos" onClick={() => setMenuOpen(false)}>Demos</Link>
-            <Link href="#como" onClick={() => setMenuOpen(false)}>¿Como trabajamos?</Link>
-            <Link href="#precios" onClick={() => setMenuOpen(false)}>Precios</Link>
+            <Link href="/#servicios" onClick={() => setMenuOpen(false)}>Servicios</Link>
+            <Link href="/#demos" onClick={() => setMenuOpen(false)}>Demos</Link>
+            <Link href="/#como" onClick={() => setMenuOpen(false)}>¿Como trabajamos?</Link>
+            <Link href="/#precios" onClick={() => setMenuOpen(false)}>Precios</Link>
             <Link
-                href="#contacto"
+                href="/solicita-tu-landing"
                 className="px-4 py-2 rounded-md bg-gradient-galaxy"
                 onClick={() => setMenuOpen(false)}
             >

@@ -59,7 +59,7 @@ const Cta = () => {
         //         </div>
         //     </div>
         // </section>
-        <section className="py-20 bg-background-secondary overflow-hidden">
+        <section className="py-12 md:py-16 bg-background-secondary overflow-hidden">
   <div className="max-w-6xl mx-auto px-4 sm:px-6">
     <div className="flex flex-col lg:flex-row items-center gap-16">
       

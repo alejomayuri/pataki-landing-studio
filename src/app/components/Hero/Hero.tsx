@@ -6,7 +6,7 @@ type HeroProps = {
   onCtaClick?: () => void;
 };
 
-const Hero: React.FC<HeroProps> = ({ ctaText = "Solicita tu landing", onCtaClick }) => {
+const Hero: React.FC<HeroProps> = () => {
   return (
     <section className="relative py-20 overflow-hidden flex flex-col items-center justify-center text-center min-h-screen px-4 mt-8 bg-background text-[#F5F5F7] md:px-6"
           style={{
@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ ctaText = "Solicita tu landing", onCtaClick
         </h1>
 
         <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-10 font-sans leading-relaxed">
-          Si tu negocio no tiene una landing page, <strong>estás perdiendo dinero cada día</strong>. No es un lujo; es el lugar donde tus visitas finalmente se convierten en clientes.
+          Si tu negocio no tiene una landing page, <strong>estás perdiendo dinero cada día</strong>. No es un lujo, es el lugar donde tus visitas finalmente se convierten en clientes.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 max-w-3xl">
