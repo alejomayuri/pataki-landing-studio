@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation"
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { ChakraProvider } from '@chakra-ui/react'
+import WhatsAppGeneralBtn from "./components/WhatsAppGeneralBtn/WhatsAppGeneralBtn";
 
 interface Props {
     children: React.ReactNode;
@@ -26,6 +27,7 @@ export default function ClientLayoutSwitcher({ children }: Props) {
     return <>
         <Header />
             <main>{children}</main>
+            <WhatsAppGeneralBtn />
         <Footer />
     </>;
 }

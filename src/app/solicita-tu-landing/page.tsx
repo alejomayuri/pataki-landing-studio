@@ -1,12 +1,13 @@
 'use client';
 
 import { useState } from "react";
-import Close from "../components/icons2/demoIcons/Close";
+import Link from "next/link";
 
 export default function RequestLanding() {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
+  const [thankYouMessage, setThankYouMessage] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
@@ -29,23 +30,48 @@ export default function RequestLanding() {
       if (data.success) {
           setResult("Mensaje enviado con éxito, nos pondremos en contacto contigo pronto.");
           formulario.reset(); 
+          setThankYouMessage(true);
       } else {
           setResult("Error al enviar el mensaje. Por favor, inténtalo de nuevo.");
       }
 };
 
   return (
-    <main className="px-4 pt-36 pb-24 max-w-2xl mx-auto">
-      {/* Intro */}
-      <section className="mb-12">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-display leading-tight mb-6 text-foreground text-center md:text-left">
-          Ponte en{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
-              contacto
-          </span>{" "}
-          con{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
-              nosotros
+    thankYouMessage ? (
+      <main className="px-4 pt-36 pb-24 max-w-2xl mx-auto">
+        <section className="mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display leading-tight mb-6 text-foreground text-center md:text-left">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
+              ¡Gracias {" "}
+            </span>
+             por tu {" "}
+             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
+              mensaje!
+            </span>
+          </h2>
+          <p className="text-[var(--color-foreground-secondary)] font-sans text-base sm:text-lg max-w-3xl text-center md:text-left mx-auto md:mx-0">
+            Nos pondremos en contacto contigo pronto para hablar sobre tu proyecto.
+          </p>
+          <Link
+              href="/"
+              className="mt-8 block mx-auto md:mx-0 max-w-[150px] text-center bg-gradient-to-r from-[#7928CA] to-[#FF0080] text-white px-6 py-3 rounded-lg text-sm font-medium hover:from-[#FF0080] hover:to-[#7928CA] transition-colors duration-300"
+            >
+                Volver al inicio
+            </Link>
+        </section>
+      </main>
+    ) : (
+      <main className="px-4 pt-36 pb-24 max-w-2xl mx-auto">
+        {/* Intro */}
+        <section className="mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display leading-tight mb-6 text-foreground text-center md:text-left">
+            Ponte en{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
+                contacto
+            </span>{" "}
+            con{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
+                nosotros
           </span>{" "}
         </h1>
         <p className="text-[var(--color-foreground-secondary)] font-sans text-base sm:text-lg max-w-3xl text-center md:text-left mx-auto md:mx-0">
@@ -156,7 +182,7 @@ export default function RequestLanding() {
                 required
               >
                 <option className="bg-[#0a0a0a] text-white" value="">Selecciona una opción</option>
-                <option className="bg-[#0a0a0a] text-white">Esencial (S/ 300)</option>
+                <option className="bg-[#0a0a0a] text-white">Esencial (S/ 390)</option>
                 <option className="bg-[#0a0a0a] text-white">Profesional (S/ 690)</option>
                 <option className="bg-[#0a0a0a] text-white">Premium (S/ 999)</option>
               </select>
@@ -176,6 +202,24 @@ export default function RequestLanding() {
             </div>
           </fieldset>
 
+          {/* T&C */}
+          <fieldset className="space-y-6 mb-16">
+            <legend className="bg-clip-text text-transparent bg-gradient-to-r from-[#7928CA] to-[#FF0080] font-bold text-sm uppercase tracking-widest text-neutral-400">
+              Términos y condiciones
+            </legend>
+            <div className="flex items-start gap-2 mt-4">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+                className="mt-1"
+              />
+              <label htmlFor="terms" className="text-sm">
+                He leido y acepto los <a href="/terminos-y-condiciones" className="text-[#ff0080] hover:underline">términos y condiciones</a>
+              </label>
+            </div>
+          </fieldset>
           {/* CTA */}
           <div>
             <button
@@ -191,20 +235,8 @@ export default function RequestLanding() {
             </p>
           </div>
         </form>
-        {loading && (
-            <p className="text-left text-lg text-white font-sans text-center mt-8">
-                Enviando...
-            </p>
-        )}
-        {showMessage && (
-            <div className="relative max-w-full text-left text-lg text-white font-sans text-center mt-8 bg-gradient-to-r from-[#7928CA] to-[#FF0080] p-4 rounded-lg">
-                <Close fill='#fff' stroke='#fff' width={35} height={35} className="absolute md:top-1 md:right-1 top-0 right-0 cursor-pointer p-[5px]" onClick={() => setShowMessage(false)} />
-                <p className="text-left text-lg text-white font-sans text-center">
-                    {result}
-                </p>
-            </div>
-        )}
       </section>
     </main>
+    )
   );
 }

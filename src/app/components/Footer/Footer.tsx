@@ -2,6 +2,7 @@ import PhoneIcon from "../icons2/Phone";
 import MailIcon from "../icons2/Mail";
 import WhatsappIcon from "../icons2/WhatsappIcon";
 import InstagramIcon from "../icons2/InstagramIcon";
+import LinkedInIcon from "../icons2/LinkedIn";
 import Link from "next/link";
 
 export default function Footer() {
@@ -29,12 +30,12 @@ export default function Footer() {
                 </li>
                 <li>
                     <a href="#demos" className="hover:text-white transition-colors">
-                        Demos
+                        Proyectos
                     </a>
                 </li>
                 <li>
-                    <a href="#planes" className="hover:text-white transition-colors">
-                        Planes
+                    <a href="#como" className="hover:text-white transition-colors">
+                        ¿Como trabajamos?
                     </a>
                 </li>
                 <li>
@@ -58,10 +59,10 @@ export default function Footer() {
                     <a href="mailto:contacto@pataki.io" className="hover:text-white transition-colors flex items-center gap-2">
                         <MailIcon className="w-6 h-6" />
                     </a>
-                    <a href="tel:+1234567890" className="hover:text-white transition-colors flex items-center gap-2">
-                        <PhoneIcon className="w-6 h-6" />
+                    <a href="https://www.linkedin.com/in/patakistudio/" target="_blank" className="hover:text-white transition-colors flex items-center gap-2">
+                        <LinkedInIcon className="w-6 h-6" />
                     </a>
-                    <a href="https://wa.me/1234567890" target="_blank" className="hover:text-white transition-colors flex items-center gap-2">
+                    <a href="https://wa.me/929694589" target="_blank" className="hover:text-white transition-colors flex items-center gap-2">
                         <WhatsappIcon className="w-6 h-6" />
                     </a>
                     <a href="https://instagram.com/pataki.io" target="_blank" className="hover:text-white transition-colors flex items-center gap-2">
