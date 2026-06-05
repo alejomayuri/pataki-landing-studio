@@ -62,7 +62,7 @@ export default function Footer() {
                     <a href="https://www.linkedin.com/in/patakistudio/" target="_blank" className="hover:text-white transition-colors flex items-center gap-2">
                         <LinkedInIcon className="w-6 h-6" />
                     </a>
-                    <a href="https://wa.me/929694589" target="_blank" className="hover:text-white transition-colors flex items-center gap-2">
+                    <a href="https://wa.me/979364254" target="_blank" className="hover:text-white transition-colors flex items-center gap-2">
                         <WhatsappIcon className="w-6 h-6" />
                     </a>
                     <a href="https://instagram.com/pataki.io" target="_blank" className="hover:text-white transition-colors flex items-center gap-2">

@@ -5,7 +5,7 @@ import WhatsappIcon from "../icons2/WhatsappIcon";
 const WhatsAppGeneralBtn = () => {
     return (
         <Link 
-            href="https://wa.me/929694589" 
+            href="https://wa.me/979364254" 
             target="_blank" 
             aria-label="Contactar por WhatsApp"
             className="fixed bottom-6 right-6 z-50 group"
